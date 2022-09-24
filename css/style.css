@@ -1,0 +1,54 @@
+img {
+    border: 1px solid #ddd;
+    border-radius: 25%;
+    padding: 5px;
+    max-width: 50%;
+    min-width: 20%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 1;
+  }
+
+  img:hover {
+    transform: scaleX(-1);
+  }
+
+.nav-item{
+
+  color: black;
+}
+
+.nav-item:hover {
+
+  color: rgb(154, 158, 133);
+}
+
+h1, .fade-in-text {
+
+  font: Georgia;
+  color: white;
+  text-align: center;
+  font-size: 100%;
+
+}
+
+div {
+  margin: 10px;
+}
+
+.fade-in-text {
+  animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
