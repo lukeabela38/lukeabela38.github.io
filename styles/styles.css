@@ -3,7 +3,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
-    color: #333;
 }
 
 header {
@@ -11,10 +10,13 @@ header {
     color: #fff;
     padding: 20px;
     text-align: center;
-    cursor: pointer; /* Add cursor pointer to indicate interactivity */
+    cursor: pointer;
+    /* Add cursor pointer to indicate interactivity */
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     margin-top: 0;
 }
 
