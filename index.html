@@ -4,46 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table Tennis Analytics Malta</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./styles/styles.css">
-    <script src="./scripts/script.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Table Tennis Analytics Malta</h1>
+    <header class="bg-primary text-white py-4">
+        <div class="container text-center">
+            <h1>Welcome to Table Tennis Analytics Malta</h1>
+        </div>
     </header>
-    <div class="container">
-        <section id="introduction">
-            <h2>Introduction</h2>
-            <div class="content">
-                <p>Welcome to Table Tennis Analytics Malta! This site serves as a blog and documentation platform for our table tennis analytics project. Here, we provide insightful analysis, match documentation, and technical discussions related to table tennis in Malta.</p>
-            </div>
-        </section>
-        <section id="about-me">
-            <h2>About Me</h2>
-            <div class="content">
-                <p>My name is Luke Abela. I hold a master's degree in artificial intelligence and a bachelor of engineering in electrical and electronic engineering. Currently, I work as a DevOps Engineer, leveraging my technical expertise. Previously, I worked as a Software Engineer specializing in artificial intelligence and as a university research assistant contributing to various AI projects.</p>
-            </div>
-        </section>
-        <section id="table-tennis">
-            <h2>Table Tennis</h2>
-            <div class="content">
-                <div class="subsection">
-                    <h3>Overview</h3>
-                    <p>This section provides an overview of our table tennis analytics project, including its objectives and methodologies.</p>
-                </div>
-                <div class="subsection">
-                    <h3>Technical Analysis</h3>
-                    <p>Here, we delve into the technical aspects of our analytics project, discussing algorithms, data collection techniques, and analysis methodologies.</p>
-                </div>
-                <div class="subsection">
-                    <h3>Future Work</h3>
-                    <p>Explore the future directions of our project, including planned enhancements, research areas, and potential collaborations.</p>
+    <div class="container mt-4">
+        <div class="accordion" id="accordionSections">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingIntroduction">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseIntroduction" aria-expanded="true" aria-controls="collapseIntroduction">
+                        Introduction
+                    </button>
+                </h2>
+                <div id="collapseIntroduction" class="accordion-collapse collapse show" aria-labelledby="headingIntroduction" data-bs-parent="#accordionSections">
+                    <div class="accordion-body">
+                        Welcome to Table Tennis Analytics Malta! This site serves as a blog and documentation platform for our table tennis analytics project. Here, we provide insightful analysis, match documentation, and technical discussions related to table tennis in Malta.
+                    </div>
                 </div>
             </div>
-        </section>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingAboutMe">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAboutMe" aria-expanded="false" aria-controls="collapseAboutMe">
+                        About Me
+                    </button>
+                </h2>
+                <div id="collapseAboutMe" class="accordion-collapse collapse" aria-labelledby="headingAboutMe" data-bs-parent="#accordionSections">
+                    <div class="accordion-body">
+                        My name is Luke Abela. I hold a master's degree in artificial intelligence and a bachelor of engineering in electrical and electronic engineering. Currently, I work as a DevOps Engineer, leveraging my technical expertise. Previously, I worked as a Software Engineer specializing in artificial intelligence and as a university research assistant contributing to various AI projects.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTableTennis">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTableTennis" aria-expanded="false" aria-controls="collapseTableTennis">
+                        Table Tennis
+                    </button>
+                </h2>
+                <div id="collapseTableTennis" class="accordion-collapse collapse" aria-labelledby="headingTableTennis" data-bs-parent="#accordionSections">
+                    <div class="accordion-body">
+                        <h3>Overview</h3>
+                        <p>This section provides an overview of our table tennis analytics project, including its objectives and methodologies.</p>
+                        <h3>Technical Analysis</h3>
+                        <p>Here, we delve into the technical aspects of our analytics project, discussing algorithms, data collection techniques, and analysis methodologies.</p>
+                        <h3>Future Work</h3>
+                        <p>Explore the future directions of our project, including planned enhancements, research areas, and potential collaborations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <footer>
-        <p>&copy; 2024 Table Tennis Analytics Malta. All rights reserved.</p>
+    <footer class="bg-dark text-white py-4 mt-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Table Tennis Analytics Malta. All rights reserved.</p>
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
