@@ -3,30 +3,40 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
+    color: #333;
 }
+
 header {
-    background-color: #007bff;
+    background-color: #30475e;
     color: #fff;
     padding: 20px;
     text-align: center;
+    cursor: pointer; /* Add cursor pointer to indicate interactivity */
 }
-h1 {
+
+h1, h2, h3 {
     margin-top: 0;
 }
+
 .container {
     max-width: 800px;
     margin: 20px auto;
     padding: 0 20px;
 }
-p {
-    line-height: 1.6;
+
+section {
+    margin-bottom: 20px;
 }
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+
+.collapsed .content {
+    display: none;
+}
+
+.content {
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.subsection {
+    margin-bottom: 10px;
 }
