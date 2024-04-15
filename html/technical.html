@@ -145,196 +145,45 @@
                     <div class="card ">
                         <div class="card-body ">
                             <h1 class="card-text text-center">
-                                Pose Estimation
+                                Pose Estimation for Stroke Analysis and Stroke Classification
+                            </h1>
+                            <p class="text-center">
+                                <a href="../html/pose_estimation.html"> Click Here For More </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row ">
+                <div class="col ">
+                    <div class="card ">
+                        <div class="card-body ">
+                            <h1 class="card-text text-center">
+                                Heat Map Generation for Expected Points
+                            </h1>
+                            <p class="text-center">
+                                <a href="../html/heat_map_generation.html"> Click Here For More </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row ">
+                <div class="col ">
+                    <div class="card ">
+                        <div class="card-body ">
+                            <h1 class="card-text text-center">
+                                Zero Shot Object Detection as a Basis for Rally Analysis
                             </h1>
                             <p class="text-center">Check out the code
-                                <a href="https://github.com/lukeabela38/tabletennis-analytics"> here </a>
+                                <a href=""> here </a>
                             </p>
-
-
-                            <div class="container">
-                                <div class="row ">
-                                    <div class="col ">
-                                        <div class="card ">
-                                            <div class="card-body ">
-                                                <p class="card-text text-center">
-                                                <h2>System Overview:</h2>
-                                                <p>The system is designed to analyze the movements of table tennis
-                                                    players using Raspberry
-                                                    Pi devices equipped with webcams for video capture. These Raspberry
-                                                    Pis run pose
-                                                    estimation models to interpret the video frames and generate
-                                                    movement data. This data is
-                                                    then transmitted to a centralized laptop running Ubuntu Linux. The
-                                                    laptop is configured
-                                                    with Docker containers hosting various services including Prometheus
-                                                    for data gathering,
-                                                    Alert Manager for monitoring potential issues, and Grafana for data
-                                                    visualization and
-                                                    reporting. Additionally, the coaching staff receives warnings and
-                                                    alerts regarding
-                                                    undesirable data or potential issues from the Alert Manager, and
-                                                    they can access data,
-                                                    reports, and visualizations through Grafana.</p>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="container">
-                                <div class="row ">
-                                    <div class="col ">
-                                        <div class="card ">
-                                            <div class="card-body ">
-                                                <p class="card-text text-center">
-                                                <h2>Component Breakdown:</h2>
-                                                <ol>
-                                                    <li><strong>Raspberry Pi Devices:</strong>
-                                                        <ul>
-                                                            <li>Raspberry Pi devices, such as RP1 and RP2, equipped with
-                                                                webcams (Cam1 and
-                                                                Cam2, respectively), are employed for capturing video
-                                                                feeds of table tennis
-                                                                players.</li>
-                                                            <li>These devices run pose estimation models to interpret
-                                                                the video frames into
-                                                                movement data. The system can be scaled to accommodate
-                                                                any number of
-                                                                Raspberry Pis depending on the specific use case.</li>
-                                                        </ul>
-                                                    </li>
-                                                    <li><strong>Centralized Laptop:</strong>
-                                                        <ul>
-                                                            <li>A laptop running Ubuntu Linux serves as the central
-                                                                processing unit for the
-                                                                system.</li>
-                                                            <li>Docker containers are utilized for containerization and
-                                                                management of
-                                                                services.</li>
-                                                        </ul>
-                                                    </li>
-                                                    <li><strong>Docker Containers:</strong>
-                                                        <ul>
-                                                            <li><strong>Prometheus:</strong> Responsible for collecting
-                                                                and storing data
-                                                                from the Raspberry Pis.</li>
-                                                            <li><strong>Alert Manager:</strong> Monitors incoming data
-                                                                for potential issues
-                                                                and triggers alerts if necessary.</li>
-                                                            <li><strong>Grafana:</strong> Provides visualization tools
-                                                                for data analysis and
-                                                                reporting.</li>
-                                                        </ul>
-                                                    </li>
-                                                    <li><strong>Table Tennis Players:</strong>
-                                                        <ul>
-                                                            <li>Two table tennis players, Player 1 and Player 2, whose
-                                                                movements are
-                                                                captured by the webcams connected to the Raspberry Pis.
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <li><strong>Coaching Staff:</strong>
-                                                        <ul>
-                                                            <li>The coaching staff members have access to the system for
-                                                                monitoring and
-                                                                analysis.</li>
-                                                            <li>They receive warnings and alerts from the Alert Manager
-                                                                regarding potential
-                                                                issues.</li>
-                                                            <li>They utilize Grafana for accessing data, reports, and
-                                                                visualizations related
-                                                                to player movements.</li>
-                                                        </ul>
-                                                    </li>
-                                                </ol>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="container">
-                                <div class="row ">
-                                    <div class="col ">
-                                        <div class="card ">
-                                            <div class="card-body ">
-                                                <p class="card-text text-center">
-                                                <h2>Data Flow:</h2>
-                                                <ol>
-                                                    <li>The webcams (Cam1 and Cam2) capture video feeds of the table
-                                                        tennis players (Player
-                                                        1 and Player 2).</li>
-                                                    <li>The Raspberry Pis (RP1 and RP2) process these video feeds using
-                                                        pose estimation
-                                                        models to generate movement data.</li>
-                                                    <li>The movement data is transmitted to the centralized laptop (PC)
-                                                        running Ubuntu
-                                                        Linux.</li>
-                                                    <li>Prometheus collects and stores this data for further analysis.
-                                                    </li>
-                                                    <li>Alert Manager monitors the incoming data for anomalies or
-                                                        potential issues and sends
-                                                        warnings and alerts accordingly.</li>
-                                                    <li>Grafana is used by both the coaching staff and other
-                                                        stakeholders for data
-                                                        visualization, reporting, and analysis.</li>
-                                                </ol>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="container">
-                                <div class="row ">
-                                    <div class="col ">
-                                        <div class="card ">
-                                            <div class="card-body ">
-                                                <p class="card-text text-center">
-                                                <h2>Functionality:</h2>
-                                                <ul>
-                                                    <li>The system allows real-time monitoring and analysis of table
-                                                        tennis player
-                                                        movements.</li>
-                                                    <li>Alerts are generated by the Alert Manager in case of undesirable
-                                                        data or potential
-                                                        issues.</li>
-                                                    <li>Grafana provides powerful visualization tools for coaches and
-                                                        stakeholders to track
-                                                        player performance, identify trends, and make data-driven
-                                                        decisions.</li>
-                                                </ul>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="container">
-                                <div class="row ">
-                                    <div class="col ">
-                                        <div class="card ">
-                                            <div class="card-body ">
-                                                <p class="card-text text-center">
-                                                <h2>Mermaid Diagram:</h2>
-                                                <p>You can view the Mermaid diagram <a
-                                                        href="https://www.mermaidchart.com/raw/6be47cc9-858b-472b-8ef0-574a3ae04759?theme=light&version=v0.1&format=svg">here</a>.
-                                                    This diagram depicts the system architecture with two Raspberry Pis,
-                                                    but it can be
-                                                    scaled for any number of Raspberry Pis depending on the specific use
-                                                    case.</p>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>

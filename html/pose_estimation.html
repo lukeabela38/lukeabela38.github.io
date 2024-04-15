@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luke's Table Tennis Analytics</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../images/ltta_logo.png" width="10%">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./aboutme.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./tabletennis.html">Table Tennis</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./technical.html">Technical</a>
+                    </li>
+                    <li class="nav-item">
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="bg-image" style="background-image: url(../images/ltta_logo.png);">
+
+        <header>
+            An Open Source Approach to Analytics
+        </header>
+
+        <div class="container">
+            <div class="row ">
+                <div class="col ">
+                    <div class="card ">
+                        <div class="card-body ">
+                            <h1 class="card-text text-center">
+                                Pose Estimation for Stroke Analysis and Stroke Classification
+                            </h1>
+                            <p class="text-center">Check out the code
+                                <a href="https://github.com/lukeabela38/tabletennis-analytics"> here </a>
+                            </p>
+
+
+                            <div class="container">
+                                <div class="row ">
+                                    <div class="col ">
+                                        <div class="card ">
+                                            <div class="card-body ">
+                                                <p class="card-text text-center">
+                                                <h2>System Overview:</h2>
+                                                <p>The system is designed to analyze the movements of table tennis
+                                                    players using Raspberry
+                                                    Pi devices equipped with webcams for video capture. These Raspberry
+                                                    Pis run pose
+                                                    estimation models to interpret the video frames and generate
+                                                    movement data. This data is
+                                                    then transmitted to a centralized laptop running Ubuntu Linux. The
+                                                    laptop is configured
+                                                    with Docker containers hosting various services including Prometheus
+                                                    for data gathering,
+                                                    Alert Manager for monitoring potential issues, and Grafana for data
+                                                    visualization and
+                                                    reporting. Additionally, the coaching staff receives warnings and
+                                                    alerts regarding
+                                                    undesirable data or potential issues from the Alert Manager, and
+                                                    they can access data,
+                                                    reports, and visualizations through Grafana. Besides simply being used as a reporting metric for analysis, this data also enables us to train and infer which strokes are being performed by the players. The four most fundamental of which are the forehand drive, the backhand drive, the forehand push, and the backhand push.
+                                                </p>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container">
+                                <div class="row ">
+                                    <div class="col ">
+                                        <div class="card ">
+                                            <div class="card-body ">
+                                                <p class="card-text text-center">
+                                                <h2>Component Breakdown:</h2>
+                                                <ol>
+                                                    <li><strong>Raspberry Pi Devices:</strong>
+                                                        <ul>
+                                                            <li>Raspberry Pi devices, such as RP1 and RP2, equipped with
+                                                                webcams (Cam1 and
+                                                                Cam2, respectively), are employed for capturing video
+                                                                feeds of table tennis
+                                                                players.</li>
+                                                            <li>These devices run pose estimation models to interpret
+                                                                the video frames into
+                                                                movement data. The system can be scaled to accommodate
+                                                                any number of
+                                                                Raspberry Pis depending on the specific use case.</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><strong>Centralized Laptop:</strong>
+                                                        <ul>
+                                                            <li>A laptop running Ubuntu Linux serves as the central
+                                                                processing unit for the
+                                                                system.</li>
+                                                            <li>Docker containers are utilized for containerization and
+                                                                management of
+                                                                services.</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><strong>Docker Containers:</strong>
+                                                        <ul>
+                                                            <li><strong>Prometheus:</strong> Responsible for collecting
+                                                                and storing data
+                                                                from the Raspberry Pis.</li>
+                                                            <li><strong>Alert Manager:</strong> Monitors incoming data
+                                                                for potential issues
+                                                                and triggers alerts if necessary.</li>
+                                                            <li><strong>Grafana:</strong> Provides visualization tools
+                                                                for data analysis and
+                                                                reporting.</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><strong>Table Tennis Players:</strong>
+                                                        <ul>
+                                                            <li>Two table tennis players, Player 1 and Player 2, whose
+                                                                movements are
+                                                                captured by the webcams connected to the Raspberry Pis.
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><strong>Coaching Staff:</strong>
+                                                        <ul>
+                                                            <li>The coaching staff members have access to the system for
+                                                                monitoring and
+                                                                analysis.</li>
+                                                            <li>They receive warnings and alerts from the Alert Manager
+                                                                regarding potential
+                                                                issues.</li>
+                                                            <li>They utilize Grafana for accessing data, reports, and
+                                                                visualizations related
+                                                                to player movements.</li>
+                                                        </ul>
+                                                    </li>
+                                                </ol>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container">
+                                <div class="row ">
+                                    <div class="col ">
+                                        <div class="card ">
+                                            <div class="card-body ">
+                                                <p class="card-text text-center">
+                                                <h2>Data Flow:</h2>
+                                                <ol>
+                                                    <li>The webcams (Cam1 and Cam2) capture video feeds of the table
+                                                        tennis players (Player
+                                                        1 and Player 2).</li>
+                                                    <li>The Raspberry Pis (RP1 and RP2) process these video feeds using
+                                                        pose estimation
+                                                        models to generate movement data.</li>
+                                                    <li>The movement data is transmitted to the centralized laptop (PC)
+                                                        running Ubuntu
+                                                        Linux.</li>
+                                                    <li>Prometheus collects and stores this data for further analysis.
+                                                    </li>
+                                                    <li>Alert Manager monitors the incoming data for anomalies or
+                                                        potential issues and sends
+                                                        warnings and alerts accordingly.</li>
+                                                    <li>Grafana is used by both the coaching staff and other
+                                                        stakeholders for data
+                                                        visualization, reporting, and analysis.</li>
+                                                </ol>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container">
+                                <div class="row ">
+                                    <div class="col ">
+                                        <div class="card ">
+                                            <div class="card-body ">
+                                                <p class="card-text text-center">
+                                                <h2>Functionality:</h2>
+                                                <ul>
+                                                    <li>The system allows near real-time monitoring and analysis of table
+                                                        tennis player
+                                                        movements.</li>
+                                                    <li>Alerts are generated by the Alert Manager in case of undesirable
+                                                        data or potential
+                                                        issues.</li>
+                                                    <li>Grafana provides powerful visualization tools for coaches and
+                                                        stakeholders to track
+                                                        player performance, identify trends, and make data-driven
+                                                        decisions.</li>
+                                                </ul>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container">
+                                <div class="row ">
+                                    <div class="col ">
+                                        <div class="card ">
+                                            <div class="card-body ">
+                                                <p class="card-text text-center">
+                                                <h2>Mermaid Diagram:</h2>
+                                                <p>You can view the Mermaid diagram <a
+                                                        href="https://www.mermaidchart.com/raw/6be47cc9-858b-472b-8ef0-574a3ae04759?theme=light&version=v0.1&format=svg">here</a>.
+                                                    This diagram depicts the system architecture with two Raspberry Pis,
+                                                    but it can be
+                                                    scaled for any number of Raspberry Pis depending on the specific use
+                                                    case.</p>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
